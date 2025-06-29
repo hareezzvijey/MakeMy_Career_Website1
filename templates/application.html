@@ -10,7 +10,7 @@
 <body style="background-color:#f5f7fa;">
   <div class="container application-form mt-5 mb-5">
     <h2 class="text-center mb-4">Apply for This Job</h2>
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
       <div class="mb-3">
         <label for="name" class="form-label">Full Name</label>
         <input type="text" class="form-control" id="name" name="name" required>
@@ -35,7 +35,11 @@
         <label for="cover" class="form-label">Cover Letter</label>
         <textarea class="form-control" id="cover" name="cover" rows="5" placeholder="Tell us why you're a great fit!" required></textarea>
       </div>
-
+      {% if success %}
+        <div class="alert alert-success">Your application has been submitted successfully!</div>
+      {% elif error %}
+        <div class="alert alert-danger">{{ error }}</div>
+      {% endif %}
       <button type="submit" class="btn btn-primary w-100">Submit Application</button>
     </form>
   </div>
