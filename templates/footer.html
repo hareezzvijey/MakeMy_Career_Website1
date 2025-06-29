@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <style>
+      .site-footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 40px 20px;
+        margin-top: 80px;
+        font-size: 16px;
+      }
+
+      .footer-content {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .footer-link {
+        color: #bdc3c7;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+
+      .social-icons {
+        margin-top: 15px;
+      }
+
+      .social-icons img {
+        width: 24px;
+        margin: 0 10px;
+        filter: brightness(0) invert(1);
+        transition: transform 0.3s ease;
+      }
+
+      .social-icons img:hover {
+        transform: scale(1.2);
+      }
+
+    </style>
+    <footer class="site-footer">
+      <div class="footer-content container text-center">
+        <p><strong>MakeMy Career</strong> &copy; 2025. All rights reserved.</p>
+        <p>
+          <a href="#" class="footer-link">Privacy Policy</a> |
+          <a href="#" class="footer-link">Terms of Service</a> |
+          <a href="#" class="footer-link">Contact Us</a>
+        </p>
+        <div class="social-icons">
+          <a href="#"><img src="{{ url_for('static', filename='icons/facebook.svg') }}" alt="Facebook"></a>
+          <a href="#"><img src="{{ url_for('static', filename='icons/linkedin.svg') }}" alt="LinkedIn"></a>
+          <a href="#"><img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
