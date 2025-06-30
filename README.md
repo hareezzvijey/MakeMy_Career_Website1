@@ -96,7 +96,7 @@ Here's a professional and informative **README.md** content for your **MakeMy Ca
 ## 📫 Contact
 
 Feel free to connect or raise issues via GitHub or email:
-**[hareezzvijey@example.com](mailto:hareezzvijey@example.com)** (replace with your actual contact)
+**[hareezzvijey@example.com](mailto:hareezzv@gmail.com)** 
 
 ---
 
