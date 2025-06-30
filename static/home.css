@@ -3,37 +3,43 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header */
 .Header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 30px;
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.Header h2 {
+  font-size: 24px;
+  margin: 0;
 }
 
 .Pages {
-    display: flex;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .Pages h3 {
-    margin: 0 10px;
-    transition: color 0.2s ease;
+  margin: 0;
+  font-size: 16px;
+  color: white;
+  transition: color 0.2s ease;
 }
 
 .Pages h3:hover {
-    color: #4267B2;
-    cursor: pointer;
+  color: #4267B2;
+  cursor: pointer;
 }
 
-/* Hero Image */
 .Image {
     margin-top: 110px;
     text-align: center;
@@ -155,3 +161,105 @@ body {
 .contact-btn:hover {
     background-color: #365899;
 }
+
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    align-items: auto-flow;
+    padding: 12px 20px;
+  }
+
+  .Pages {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Pages h3 {
+    margin: 5px 0;
+  }
+
+  .career-banner {
+    height: 250px;
+    border-radius: 0;
+  }
+
+  .About h1,
+  .Job_Openings h1 {
+    font-size: 28px;
+  }
+
+  .About .lead {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .jobs {
+    padding: 20px;
+  }
+
+  .job_listing {
+    padding: 20px;
+  }
+
+  .apply-btn,
+  .contact-btn {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .Apply_button {
+    padding: 20px 0;
+  }
+
+  .application-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header {
+    padding: 10px 15px;
+  }
+
+  .About h1,
+  .Job_Openings h1 {
+    font-size: 24px;
+  }
+
+  .About .lead {
+    font-size: 15px;
+  }
+
+  .job_listing p {
+    font-size: 14px;
+  }
+
+  .apply-btn,
+  .contact-btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .Pages {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .Pages h3 {
+    font-size: 14px;
+  }
+}
+
+
