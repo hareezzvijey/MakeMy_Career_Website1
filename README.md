@@ -93,13 +93,6 @@ Here's a professional and informative **README.md** content for your **MakeMy Ca
 
 ---
 
-## 📫 Contact
-
-Feel free to connect or raise issues via GitHub or email:
-**[hareezzvijey@example.com](mailto:hareezzv@gmail.com)** 
-
----
-
 ## 💡 Future Enhancements
 
 * Admin dashboard for job management
